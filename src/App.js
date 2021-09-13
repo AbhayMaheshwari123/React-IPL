@@ -11,8 +11,29 @@ function App() {
             <Route path='/' exact>
               <Container />
             </Route>
-            <Route path='/teams/chennai-super-kings' exact>
+            <Route path='/team/chennai-super-kings' exact>
               CSK
+            </Route>
+            <Route path='/team/delhi-capitals' exact>
+              DC
+            </Route>
+            <Route path='/team/kings-xi-punjab' exact>
+              KXIP
+            </Route>
+            <Route path='/team/kolkata-knight-riders' exact>
+              KKR
+            </Route>
+            <Route path='/team/mumbai-indians' exact>
+              MI
+            </Route>
+            <Route path='/team/rajasthan-royals' exact>
+              RR
+            </Route>
+            <Route path='/team/royal-challengers-banglore' exact>
+              RCB
+            </Route>
+            <Route path='/team/sunrisers-hyderabad' exact>
+              SRH
             </Route>
           </Switch>
         </div>
