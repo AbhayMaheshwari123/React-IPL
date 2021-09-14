@@ -32,8 +32,8 @@ function App() {
             <Route path='/team/rajasthan-royals' exact>
               <Team url={URL["rajasthan-royals"]}/>
             </Route>
-            <Route path='/team/royal-challengers-banglore' exact>
-              <Team url={URL["royal-challengers-banglore"]}/>
+            <Route path='/team/royal-challengers-bangalore' exact>
+              <Team url={URL["royal-challengers-bangalore"]}/>
             </Route>
             <Route path='/team/sunrisers-hyderabad' exact>
               <Team url={URL["sunrisers-hyderabad"]}/>
