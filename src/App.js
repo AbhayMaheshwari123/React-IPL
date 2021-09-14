@@ -4,6 +4,7 @@ import Container from './Pages/Container';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import URL from './Helper/Url';
 import Team from './Components/Team';
+import Notfound from './Components/Notfound';
 function App() {
   return (
     <Router>
@@ -37,6 +38,7 @@ function App() {
             <Route path='/team/sunrisers-hyderabad' exact>
               <Team url={URL["sunrisers-hyderabad"]}/>
             </Route>
+            <Route component={Notfound}/>
           </Switch>
         </div>
     </Router>
