@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar.js';
 import Container from './Pages/Container';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import URL from './Helper/Url';
+import Team from './Components/Team';
 function App() {
   return (
     <Router>
@@ -13,28 +14,28 @@ function App() {
               <Container />
             </Route>
             <Route path='/team/chennai-super-kings' exact>
-              <Container url={URL["chennai-super-kings"]}/>
+              <Team url={URL["chennai-super-kings"]}/>
             </Route>
             <Route path='/team/delhi-capitals' exact>
-              <Container url={URL["delhi-capitals"]}/>
+              <Team url={URL["delhi-capitals"]}/>
             </Route>
             <Route path='/team/kings-xi-punjab' exact>
-              <Container url={URL["kings-xi-punjab"]}/>
+              <Team url={URL["kings-xi-punjab"]}/>
             </Route>
             <Route path='/team/kolkata-knight-riders' exact>
-              <Container url={URL["kolkata-knight-riders"]}/>
+              <Team url={URL["kolkata-knight-riders"]}/>
             </Route>
             <Route path='/team/mumbai-indians' exact>
-              <Container url={URL["mumbai-indians"]}/>
+              <Team url={URL["mumbai-indians"]}/>
             </Route>
             <Route path='/team/rajasthan-royals' exact>
-              <Container url={URL["rajasthan-royals"]}/>
+              <Team url={URL["rajasthan-royals"]}/>
             </Route>
             <Route path='/team/royal-challengers-banglore' exact>
-              <Container url={URL["royal-challengers-banglore"]}/>
+              <Team url={URL["royal-challengers-banglore"]}/>
             </Route>
             <Route path='/team/sunrisers-hyderabad' exact>
-              <Container url={URL["sunrisers-hyderabad"]}/>
+              <Team url={URL["sunrisers-hyderabad"]}/>
             </Route>
           </Switch>
         </div>

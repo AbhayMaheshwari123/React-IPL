@@ -1,6 +1,6 @@
 import React from 'react'
 import Cards from '../Components/Cards'
-function Container() {
+function Container(props) {
     return (
         <div>
             <Cards></Cards>
