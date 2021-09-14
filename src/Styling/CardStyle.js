@@ -24,15 +24,28 @@ const useStyles=createUseStyles({
     },
     teamname:{
         marginTop:'5%',
-        marginBottom:'1%'
+        marginBottom:'1%',
+        color:'white'
+
     },
     win:{
         marginTop:'3%',
         marginBottom:'2%',
-        border:'1px groove black',
+        border:'0.5px groove hsla(0,0%,7%,.35)',
         width:'max-content',
-        borderRadius:'9px'
+        borderRadius:'9px',
+        color:'white',
+        background:'hsla(0,0%,7%,.35)'
     },
+
+    'chennai-super-kings':{background: 'linear-gradient( 136deg,#fdb913,#f85c00)'},
+    "delhi-capitals":{background: 'linear-gradient(136deg ,#004c93,#0358a7)'},
+    "mumbai-indians":{background: 'linear-gradient( 136deg,#005da0,#003a63)'},
+    "rajasthan-royals":{background: 'linear-gradient( 136deg,#2d4d9d,#172e5e)'},
+    "kings-xi-punjab":{background: 'linear-gradient(136deg,#aa4545,#740f0b)'},
+    "royal-challengers-bangalore":{background: 'linear-gradient(136deg,#000,#464646)'},
+    "sunrisers-hyderabad":{background: 'linear-gradient(136deg,#fb643e,#b81c25)'},
+    "kolkata-knight-riders":{background: 'linear-gradient(136deg,#70458f,#3d2057)'},
     '@media screen and (min-width:480px)':{
         container:{
             width: '100%',
@@ -49,12 +62,14 @@ const useStyles=createUseStyles({
         home:{
             display:'flex',
             flexDirection:'column',
-            textAlign:'center'
+            textAlign:'center',
+            color:'white'
         },
         venue:{
             display:'flex',
             flexDirection:'column',
-            textAlign:'center'
+            textAlign:'center',
+            color:'white'
         },
         logo:{
             width:'35%',

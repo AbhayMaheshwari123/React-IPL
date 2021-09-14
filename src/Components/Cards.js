@@ -25,7 +25,7 @@ function Cards() {
                 {Object.keys(Logo).map((item,index)=>
                 {
                     return (
-                    <div className={classes.teamcard} key={index} onClick={()=>{history.push(`team/${teamData[index].id}`)}}>                      
+                    <div className={`${classes.teamcard} ${classes[teamData[index].id]}`} key={index} onClick={()=>{history.push(`team/${teamData[index].id}`)}}>                      
                         <img className={classes.logo} src={Logo[item].default} />
                         <div >
                             <h3 className={classes.teamname}>{teamData[index].teamName}</h3>
