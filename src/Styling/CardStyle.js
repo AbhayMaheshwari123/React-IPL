@@ -10,7 +10,7 @@ const useStyles=createUseStyles({
         display:'flex',
         border:'1px groove black',
         borderRadius:'9px',
-        marginTop:'5%'
+        marginBottom:'2%'
     },
     home:{
         display:'none',
@@ -94,9 +94,5 @@ const useStyles=createUseStyles({
         }
     }
 })
-
-
-
-
 
 export default useStyles

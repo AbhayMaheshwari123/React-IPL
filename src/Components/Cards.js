@@ -4,6 +4,7 @@ import { useEffect,useState } from 'react'
 import Logo from '../Helper/Logo';
 import { useHistory } from 'react-router-dom'
 import useStyles from '../Styling/CardStyle';
+import Lodr from '../loader';
 function Cards() {
     const [teamData,setteamData]=useState();
     const url='https://ipl-t20.herokuapp.com/teams';
@@ -18,7 +19,7 @@ function Cards() {
     }, [url])
 
     if(!teamData){
-        return <h3>Loading...</h3>
+        return <Lodr />
     }else{
     return (
             <div className={classes.container}>
@@ -31,7 +32,7 @@ function Cards() {
                             <h3 className={classes.teamname}>{teamData[index].teamName}</h3>
                             <h6 className={classes.venue}>{teamData[index].venue}</h6>
                             <div >
-                                <h4 className={classes.win}>{teamData[index].winningYears}</h4>
+                                <h4 className={classes.win}>{teamData[index].winningYears+" "}</h4>
                             </div> 
                         </div>
                         <h5 className={classes.home}>Team Home</h5>
