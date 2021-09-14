@@ -3,11 +3,12 @@ import axios from 'axios'
 import { useEffect,useState } from 'react'
 import Logo from '../Helper/Logo';
 import { useHistory } from 'react-router-dom'
-
+import useStyles from '../Styling/CardStyle';
 function Cards() {
     const [teamData,setteamData]=useState();
     const url='https://ipl-t20.herokuapp.com/teams';
     const history=useHistory();
+    const classes=useStyles();
     useEffect(() => {
         async function fetchdata(){
             const response=await axios.get(url);
@@ -20,20 +21,21 @@ function Cards() {
         return <h3>Loading...</h3>
     }else{
     return (
-            <div>
+            <div className={classes.container}>
                 {Object.keys(Logo).map((item,index)=>
                 {
                     return (
-                    <div key={index} onClick={()=>{history.push(`team/${teamData[index].id}`)}}>                      
-                        <img src={Logo[item].default} />
+                    <div className={classes.teamcard} key={index} onClick={()=>{history.push(`team/${teamData[index].id}`)}}>                      
+                        <img className={classes.logo} src={Logo[item].default} />
                         <div >
-                            <h3 >{teamData[index].teamName}</h3>
-                            <h6 >{teamData[index].venue}</h6>
+                            <h3 className={classes.teamname}>{teamData[index].teamName}</h3>
+                            <h6 className={classes.venue}>{teamData[index].venue}</h6>
                             <div >
-                                <h4 >{teamData[index].winningYears}</h4>
+                                <h4 className={classes.win}>{teamData[index].winningYears}</h4>
                             </div> 
                         </div>
-                        <h5>Team Home</h5>
+                        <h5 className={classes.home}>Team Home</h5>
+                        
                     </div>                    
                     )
                 })}
