@@ -3,8 +3,8 @@ import axios from 'axios'
 import { useEffect,useState } from 'react'
 import Logo from '../Helper/Logo';
 import { useHistory } from 'react-router-dom'
-import useStyles from '../Styling/CardStyle';
-import Lodr from '../loader';
+import useStyles from '../Styling/TeamCardStyle';
+import Lodr from './loader';
 function Cards() {
     const [teamData,setteamData]=useState();
     const url='https://ipl-t20.herokuapp.com/teams';

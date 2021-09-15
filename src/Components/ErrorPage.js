@@ -5,7 +5,7 @@ const useStyles=createUseStyles({
         textAlign:'center'
     }
 })
-function Notfound() {
+function Error() {
     const classes=useStyles();
     return (
         <div>
@@ -14,4 +14,4 @@ function Notfound() {
     )
 }
 
-export default Notfound
+export default Error

@@ -1,4 +1,3 @@
-  
 import React from "react";
 import Bannerstyle from "../Styling/BannerStyle.js";
 

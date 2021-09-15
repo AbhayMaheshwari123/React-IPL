@@ -1,10 +1,10 @@
 import './App.css';
 import Navbar from './Components/Navbar.js';
-import Container from './Pages/Container';
+import Container from './Pages/CardContainer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import URL from './Helper/Url';
-import Team from './Components/Team';
-import Notfound from './Components/Notfound';
+import Team from './Components/PlayerCards';
+import Error from './Components/ErrorPage';
 function App() {
   return (
     <Router>
@@ -38,7 +38,7 @@ function App() {
             <Route path='/team/sunrisers-hyderabad' exact>
               <Team url={URL["sunrisers-hyderabad"]} teamname={"sunrisers-hyderabad"}/>
             </Route>
-            <Route component={Notfound}/>
+            <Route component={Error}/>
           </Switch>
         </div>
     </Router>
