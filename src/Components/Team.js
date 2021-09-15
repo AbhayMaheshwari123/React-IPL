@@ -3,6 +3,8 @@ import axios from 'axios'
 import {useEffect,useState} from 'react'
 import useStyles from '../Styling/TeamStyle'
 import Lodr from '../loader'
+import Banner from '../Helper/Banner'
+
 function Team(props) {
     const [teamdetail,setteamdetail]=useState();
     const {url,teamname}=props;
@@ -20,6 +22,10 @@ function Team(props) {
     }else{
     return (
         <div className={classes.container}>
+            <div>
+                <img src={Banner[teamname].img.default}/>
+                <img src={Banner[teamname].huddle.default} />
+            </div>
             {teamdetail.players.map((detail,index)=>{
                 return (
                 <div className={classes.playercard}> 
