@@ -7,7 +7,7 @@ const useStyles=createUseStyles({
         height: '70px',
         width: '100%',
         boxShadow:' 0 4px 8px hsla(0, 0%, 0.0000%, 0.75000)',
-        marginBottom:'3%'
+        
         
     },
     logo:{

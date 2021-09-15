@@ -11,7 +11,8 @@ const useStyles=createUseStyles({
         alignItems:'center',
         border:'1px groove hsla(0,0%,7%,.35)',
         borderRadius:'9px',
-        margin:'5%'
+        margin:'5%',
+        boxShadow:' 0 4px 8px hsla(0, 0%, 0.0000%, 0.75000)'
     },
     detail:{
         display:'flex',
@@ -22,7 +23,7 @@ const useStyles=createUseStyles({
         display:'flex',
     },
     pic:{
-        width:'50%'
+        width:'60%'
     },
     run:{
         margin:'0 50% 0 50%',
@@ -42,7 +43,7 @@ const useStyles=createUseStyles({
         display:'flex',
         justifyContent:'center',
         width:'100%',
-        borderRadius:'9px'
+        borderRadius:'9px 9px 0 0'
     },
     "chennai-super-kings":{background: 'linear-gradient( 136deg,#fdb913,#f85c00)'},
     "delhi-capitals":{background: 'linear-gradient(136deg ,#004c93,#0358a7)'},

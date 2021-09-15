@@ -31,9 +31,13 @@ function Cards() {
                         <div >
                             <h3 className={classes.teamname}>{teamData[index].teamName}</h3>
                             <h6 className={classes.venue}>{teamData[index].venue}</h6>
+                            {teamData[index].winningYears.length?(
                             <div >
-                                <h4 className={classes.win}>{teamData[index].winningYears+" "}</h4>
-                            </div> 
+                                <h4 className={classes.win}>{teamData[index].winningYears.map((item)=>{
+                                    return `${item} `;
+                                })}</h4>
+                            </div> ):(<></>)}
+                            
                         </div>
                         <h5 className={classes.home}>Team Home</h5>
                         

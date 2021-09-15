@@ -8,9 +8,11 @@ const useStyles=createUseStyles({
     },
     teamcard:{
         display:'flex',
-        border:'1px groove black',
+        border:'1px groove white',
+        boxShadow:' 0 4px 8px hsla(0, 0%, 0.0000%, 0.75000)',
         borderRadius:'9px',
-        marginBottom:'2%'
+        marginBottom:'2%',
+        marginTop:'3%'
     },
     home:{
         display:'none',
@@ -31,11 +33,11 @@ const useStyles=createUseStyles({
     win:{
         marginTop:'3%',
         marginBottom:'2%',
-        border:'0.5px groove hsla(0,0%,7%,.35)',
         width:'max-content',
-        borderRadius:'9px',
+        borderRadius:'12px',
         color:'white',
-        background:'hsla(0,0%,7%,.35)'
+        background:'hsla(0,0%,7%,.35)',
+        padding:'5px'
     },
 
     'chennai-super-kings':{background: 'linear-gradient( 136deg,#fdb913,#f85c00)'},
