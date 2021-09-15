@@ -1,5 +1,5 @@
 const Banner={
-    "chennai-super-kings":{"img":require('../Assests/CSK.jpg') ,"huddle":require('../Assests/CSK-huddle (1).jpg')},
+    "chennai-super-kings":{"img":require('../Assests/CSK.jpg') ,"huddle":require('../Assests/CSK-huddle.jpg')},
     "delhi-capitals":{"img":require('../Assests/DC.jpg') ,"huddle":require('../Assests/DC-huddle.jpg')},
     "mumbai-indians":{"img":require('../Assests/MI.jpg') ,"huddle":require('../Assests/MI-huddle.jpg')},
     "rajasthan-royals":{"img":require('../Assests/RR.jpg') ,"huddle":require('../Assests/RR-huddle.jpg')},
