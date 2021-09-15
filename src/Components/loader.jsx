@@ -1,5 +1,6 @@
 import React from "react";
 import Loader from "react-loader-spinner";
+
 class Lodr extends React.Component{
     render(){
         return (<Loader
@@ -8,9 +9,8 @@ class Lodr extends React.Component{
             height={100}
             width={100}
             timeout={3000}
-            
+            style={{margin:'25% 45%'}}
           />)
-        
     }
 }
 
