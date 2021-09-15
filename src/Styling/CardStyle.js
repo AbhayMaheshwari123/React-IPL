@@ -46,6 +46,7 @@ const useStyles=createUseStyles({
     "royal-challengers-bangalore":{background: 'linear-gradient(136deg,#000,#464646)'},
     "sunrisers-hyderabad":{background: 'linear-gradient(136deg,#fb643e,#b81c25)'},
     "kolkata-knight-riders":{background: 'linear-gradient(136deg,#70458f,#3d2057)'},
+    
     '@media screen and (min-width:480px)':{
         container:{
             width: '100%',

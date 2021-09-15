@@ -15,28 +15,28 @@ function App() {
               <Container />
             </Route>
             <Route path='/team/chennai-super-kings' exact>
-              <Team url={URL["chennai-super-kings"]}/>
+              <Team url={URL["chennai-super-kings"]} teamname={"chennai-super-kings"}/>
             </Route>
             <Route path='/team/delhi-capitals' exact>
-              <Team url={URL["delhi-capitals"]}/>
+              <Team url={URL["delhi-capitals"]} teamname={"delhi-capitals"}/>
             </Route>
             <Route path='/team/kings-xi-punjab' exact>
-              <Team url={URL["kings-xi-punjab"]}/>
+              <Team url={URL["kings-xi-punjab"]} teamname={"kings-xi-punjab"}/>
             </Route>
             <Route path='/team/kolkata-knight-riders' exact>
-              <Team url={URL["kolkata-knight-riders"]}/>
+              <Team url={URL["kolkata-knight-riders"]} teamname={"kolkata-knight-riders"}/>
             </Route>
             <Route path='/team/mumbai-indians' exact>
-              <Team url={URL["mumbai-indians"]}/>
+              <Team url={URL["mumbai-indians"]} teamname={"mumbai-indians"}/>
             </Route>
             <Route path='/team/rajasthan-royals' exact>
-              <Team url={URL["rajasthan-royals"]}/>
+              <Team url={URL["rajasthan-royals"]} teamname={"rajasthan-royals"}/>
             </Route>
             <Route path='/team/royal-challengers-bangalore' exact>
-              <Team url={URL["royal-challengers-bangalore"]}/>
+              <Team url={URL["royal-challengers-bangalore"]} teamname={"royal-challengers-bangalore"}/>
             </Route>
             <Route path='/team/sunrisers-hyderabad' exact>
-              <Team url={URL["sunrisers-hyderabad"]}/>
+              <Team url={URL["sunrisers-hyderabad"]} teamname={"sunrisers-hyderabad"}/>
             </Route>
             <Route component={Notfound}/>
           </Switch>

@@ -5,7 +5,7 @@ import useStyles from '../Styling/TeamStyle'
 import Lodr from '../loader'
 function Team(props) {
     const [teamdetail,setteamdetail]=useState();
-    const {url}=props;
+    const {url,teamname}=props;
     const classes=useStyles();
     useEffect(() => {
         async function fetchteamdata(){
@@ -22,14 +22,16 @@ function Team(props) {
         <div className={classes.container}>
             {teamdetail.players.map((detail,index)=>{
                 return (
-                    <div>
-                <img className={classes.pic} src={detail.image} alt={detail.name} />
-                    <div>
+                <div className={classes.playercard}> 
+                    <div className={`${classes.bg} ${classes[teamname]}`}>
+                        <img className={classes.pic} src={detail.image} alt={detail.name} />
+                    </div>
+                    <div className={classes.detail}>
                         <div>
                             <h5 className={classes.playername}>{detail.name}</h5>
                         </div>
                         <h6 className={classes.iplyear}>IPL 2021</h6>
-                        <div>
+                        <div className={classes.stats}>
                             <div className={classes.match}>
                                 <h5>{detail.stats.matches}</h5>
                                 <h5>Matches</h5>
@@ -44,7 +46,8 @@ function Team(props) {
                             </div>
                         </div>
                         <div><h4>View Profile</h4></div>
-                    </div></div>)
+                    </div>
+                </div>)
             })}
         </div>
     )}
