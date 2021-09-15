@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './Components/Navbar.js';
-import Container from './Pages/CardContainer';
+import Navbar from './Components/Navbar.jsx';
+import Container from './Pages/CardContainer.jsx';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import URL from './Helper/Url';
-import Team from './Components/PlayerCards';
-import Error from './Components/ErrorPage';
+import URL from './Helper/Url.jsx';
+import Team from './Components/PlayerCards.jsx';
+import Error from './Components/ErrorPage.jsx';
 function App() {
   return (
     <Router>

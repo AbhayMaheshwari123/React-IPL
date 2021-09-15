@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from '../Components/TeamCards'
+import Cards from '../Components/TeamCards.jsx'
 function Container(props) {
     return (
         <div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Bannerstyle from "../Styling/BannerStyle.js";
+import Bannerstyle from "../Styling/BannerStyle.jsx";
 
 function Bannercomp(props) {
   const { teamName } = props;

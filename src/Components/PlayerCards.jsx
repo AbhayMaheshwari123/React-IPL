@@ -1,9 +1,9 @@
 import React from 'react'
 import axios from 'axios'
 import {useEffect,useState} from 'react'
-import useStyles from '../Styling/PlayerCardsStyle'
-import Lodr from './loader'
-import Bannercomp from './Banner.js'
+import useStyles from '../Styling/PlayerCardsStyle.jsx'
+import Lodr from './loader.jsx'
+import Bannercomp from './Banner.jsx'
 function Team(props) {
     const [teamdetail,setteamdetail]=useState();
     const {url,teamname}=props;
