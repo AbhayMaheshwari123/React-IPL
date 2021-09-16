@@ -10,8 +10,7 @@ function Cards() {
     const url='https://ipl-t20.herokuapp.com/teams';
     const history=useHistory();
     const classes=useStyles();
-    
-    
+
     useEffect(() => {
         async function fetchdata(){
             const response=await axios.get(url);
@@ -43,10 +42,8 @@ function Cards() {
                                     return `${item} `;
                                 })}</h4>
                             </div> ):(<></>)}
-                            
                         </div>
                         <h5 className={classes.home}>Team Home</h5>
-                        
                     </div>                    
                     )
                 })}

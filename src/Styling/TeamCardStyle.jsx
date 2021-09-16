@@ -61,6 +61,9 @@ const useStyles=createUseStyles({
         teamcard:{
             flexDirection: 'column',
             width: '40%',
+            '&:hover':{
+                opacity:'0.8'
+            }
         },
         home:{
             display:'flex',

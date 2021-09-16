@@ -65,6 +65,11 @@ const useStyles=createUseStyles({
         playercard:{
             flexDirection: 'column',
             width: '39%',
+            '&:hover':{
+                marginTop:'-0.5px',
+                marginBottom:'-0.5px',
+                opacity:'0.6'
+            }
         },
         run:{
             margin:'0 20% 0 20%'

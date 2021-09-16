@@ -16,7 +16,6 @@ function Team(props) {
                 setteamdetail(res.data)
         };
         fetchteamdata();
-        
     }, [url])
     if(!teamdetail){
         return <Lodr />
@@ -24,9 +23,8 @@ function Team(props) {
     return (
         <div>
             <Bannercomp teamName={teamname} />
-        
         <div className={classes.container}>
-            {teamdetail.players.map((detail,index)=>{
+            {teamdetail.players.map((detail)=>{
                 return (
                 <div className={classes.playercard}> 
                     <div className={`${classes.bg} ${classes[teamname]}`}>
