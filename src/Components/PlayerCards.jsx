@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from 'axios'
 import {useEffect,useState} from 'react'
-import useStyles from '../Styling/PlayerCardsStyle.jsx'
-import Lodr from './loader.jsx'
+import useStyles from '../Styling/PlayerCardsStyle.js'
+import Lodr from './loader.js'
 import Bannercomp from './Banner.jsx'
-import URL from '../Helper/Url.jsx'
+import URL from '../Helper/Url.js'
 function Team(props) {
     const url=URL[props.match.url.slice(6)]
     const [teamdetail,setteamdetail]=useState();

@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import Banner from '../Helper/Bannermapping.jsx';
+import Banner from '../Helper/Bannermapping.js';
 const Bannerstyle = createUseStyles({
   "chennai-super-kings-banner": {
     backgroundImage:`url(${Banner["chennai-super-kings"].huddle.default})`,
