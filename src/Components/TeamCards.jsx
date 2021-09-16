@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { useEffect,useState } from 'react'
+import { useEffect,useState,useCallback } from 'react'
 import Logo from '../Helper/Logo.jsx';
 import { useHistory } from 'react-router-dom'
 import useStyles from '../Styling/TeamCardStyle.jsx';
@@ -10,6 +10,8 @@ function Cards() {
     const url='https://ipl-t20.herokuapp.com/teams';
     const history=useHistory();
     const classes=useStyles();
+    
+    
     useEffect(() => {
         async function fetchdata(){
             const response=await axios.get(url);
@@ -17,6 +19,10 @@ function Cards() {
             };
             fetchdata();
     }, [url])
+    
+    const clickHandler=useCallback((id)=>{    
+         history.push(`team/${id}`);   
+    },[teamData,history])
 
     if(!teamData){
         return <Lodr />
@@ -26,7 +32,7 @@ function Cards() {
                 {Object.keys(Logo).map((item,index)=>
                 {
                     return (
-                    <div className={`${classes.teamcard} ${classes[teamData[index].id]}`} key={index} onClick={()=>{history.push(`team/${teamData[index].id}`)}}>                      
+                    <div className={`${classes.teamcard} ${classes[teamData[index].id]}`} key={index} onClick={()=>clickHandler(teamData[index].id)}>                      
                         <img className={classes.logo} src={Logo[item].default} />
                         <div >
                             <h3 className={classes.teamname}>{teamData[index].teamName}</h3>

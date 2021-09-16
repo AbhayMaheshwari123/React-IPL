@@ -4,9 +4,11 @@ import {useEffect,useState} from 'react'
 import useStyles from '../Styling/PlayerCardsStyle.jsx'
 import Lodr from './loader.jsx'
 import Bannercomp from './Banner.jsx'
+import URL from '../Helper/Url.jsx'
 function Team(props) {
+    const url=URL[props.match.url.slice(6)]
     const [teamdetail,setteamdetail]=useState();
-    const {url,teamname}=props;
+    const teamname=props.match.url.slice(6)
     const classes=useStyles();
     useEffect(() => {
         async function fetchteamdata(){
