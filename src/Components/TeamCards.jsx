@@ -4,7 +4,6 @@ import { useEffect,useState,useCallback } from 'react'
 import Logo from '../Helper/Logo.js';
 import { useHistory } from 'react-router-dom'
 import useStyles from '../Styling/TeamCardStyle.js';
-import Lodr from './loader.js';
 function Cards() {
     const [teamData,setteamData]=useState();
     const url='https://ipl-t20.herokuapp.com/teams';
@@ -13,21 +12,22 @@ function Cards() {
 
     useEffect(() => {
         async function fetchdata(){
-            const response=await axios.get(url);
-            setteamData(response.data);
+            await axios.get(url).then((response)=>{
+                setteamData(response.data);
+            }).catch(()=>{
+                setteamData("error")
+            })
             };
             fetchdata();
     }, [url])
     
     const clickHandler=useCallback((id)=>{    
          history.push(`team/${id}`);   
-    },[teamData,history])
+    },[history])
 
-    if(!teamData){
-        return <Lodr />
-    }else{
+    
     return (
-            <div className={classes.container}>
+            <>{teamData && <div className={classes.container}>
                 {Object.keys(Logo).map((item,index)=>
                 {
                     return (
@@ -47,9 +47,9 @@ function Cards() {
                     </div>                    
                     )
                 })}
-            </div>
+            </div>}</>
     )
     }
-}
+
 
 export default Cards

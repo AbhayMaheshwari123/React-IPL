@@ -7,6 +7,7 @@ const useStyles=createUseStyles({
 })
 function Error() {
     const classes=useStyles();
+    console.log('error')
     return (
         <div>
             <h1 className={classes.text}>Oops! Something Went Wrong</h1>
